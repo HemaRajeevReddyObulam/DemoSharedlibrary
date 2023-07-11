@@ -1,0 +1,190 @@
+what is the build and deployment process?
+
+GitHub is a repository where the project source code will be maintained 
+then build a deployment take the latest source code from the GitHub.
+compile the project to source code execute the unit test cases perform.
+the code review using Sonar package 
+the application as a jar file or War file 
+upload the build artifact into Nexus and
+deploy the application in the server so this is build and deployment process
+
+
+so for every project build and deployment is a mandatory 
+because whatever the code we are writing that code 
+we cannot give to the client directly 
+that code should be compiled 
+the code should be tested 
+that code should be reviewed 
+that code should be packaged as a war file or jar file
+we need to keep the code in the backup then
+we need to deploy the project in the server 
+if the project is deployed in the server then only we can access that
+project but here once the coding is completed.
+ 
+================================================================================================================
+we are not going to give the code to the client directly 
+because we need to test it to test that code several environments will
+be available like a dev environment QA environment uat environment and prod environment like this several
+environments will be available (in the several environments will be available) in the project.
+
+
+ several environments will be available in the project okay 
+------------------------------------------------------
+what is the purpose of this environment ?
+ 		---------------------------
+These environments are used to test our application 
+Dev environment will be used by developers 
+QA will be used by testers 
+uat will be used by clients 
+pilot will be used for performance testing 
+
+once the code is passed in all these environments finally it will go for production.
+
+=====================================================================================================
+
+
+ so whatever the code we are writing or whatever the code we are changing 
+that should be deployed into multiple environments like this Devo QA Devo QA
+uat pilot prod like this multiple environments will be available 
+
+
+
+what is the environment & Environment Applications?
+---------------------------------------------------
+Environment is a platform which is used to run our application develop
+
+Environment Applications:-
+Dev environment:-developers will use to perform integration testing 
+QA testers will use to perform functional testing 
+uat user acceptance testing 
+
+pilot (or) pre-prod environment performance testing will be done
+prod live environment End users
+will access application running in the production environment
+
+===================================================================================================== 
+
+so development team is responsible for development activity 
+testing team is responsible for testing activity 
+operations team is responsible for build and deployment activity 
+this operations team is called as the devops team 
+
+okay development plus operations is called as devops
+
+devops is a process which is used to collaborate development teamwork and operations teamwork 
+okay using devops process we can simplify application build and deployment process 
+okay
+ 
+
+===================================================================================================
+
+What are Challenges in Bulid And Deployment Process?
+ 	   --------	-    --------------------------
+
+
+in order to do this process manually there are some challenges available
+ 
+Every day we need to deploy the latest code to the environment 
+Dev environment QA environment uat environment and prod environment 
+
+so if you need to do the deployment manually it will take lot of
+
+time and we need to deploy the code not in one environment 
+we need to deploy the code in multiple environments 
+if you want to deploy the code in multiple environments
+it will take lot of time and it is a repeated work and 
+it is error prone repeated work and error prone got it so to avoid this manual problems 
+
+
+
+we are going to automate to automate the build and deployment
+we have a software in the market that is the Jenkins 
+that is Jenkins is free that
+
+ so by using this is Jenkins whatever the work that we are
+
+doing manually that work can be automated 
+okay 
+
+============================================================================================
+
+so what is this Jenkins ?
+
+Jenkins is a free and open source software 
+Jenkins developed using Java language 
+Jenkins is used to automate build on the deployment process 
+using Jenkins 
+we can Implement CI CD 
+
+
+what is a CI CD ?
+
+
+{cicd is one process which is used to simplify the deployment process 
+  which is used to automate the deployment process }
+
+
+cicd is one of the trending approach in the development life cycle
+cicd is used to Simply  and automate project deployment and delivery process 
+
+okay 
+
+guys CI continuous integration CD continuous delivery and continuous deployment 
+
+
+continuous integration
+
+ when code changes happened it should be ready to test
+ when we do the code changes that code should be ready to test 
+
+continuous delivery
+ 
+keep that code ready to release in the Repository 
+(keep the code ready in repository to)
+(release keep it ready in repository for release)
+(keep it ready in repository for release then)
+
+continuous deployment 
+                     
+release the project to production. 
+(release or deploy the project to production) 
+
+
+when we are going for the deployment 
+
+we need to take a client approval for production deployment 
+we need to take client approvals all right
+now so these are the things that we have discussed so far it is a theoretical
+
+session completely 
+
+=======================================================================================================================
+
+
+
+what is the difference between continuous deployment and continuous delivery okay continuous integration ?
+
+continuous integration means when the code is modified by the developer that the code should be ready for testing (that code should be ready for testing) sir 
+
+continuously delivery means the automatically released to the repository, project is ready to deploy in the production 
+
+continuous deployment means it is a production deployment. 
+when we are going for continuous deployment a manual approval is required for the production directly we cannot deploy the code for the production
+
+
+production means life environment if you do some wrong deployment in the production project will fail so that's
+
+
+
+
+why continuous deployment requires a manual approval if the client is
+
+approved then only we will go for production deployment otherwise we don't go for the production deployment
+
+delivery continuous delivery means making the project ready to deploy in
+
+the production after getting the approval from the client term then we will deploy the project in the
+
+production continuous integration continuous delivery continuous deployment this is the order this is the
+
+order we are going to follow when developer
